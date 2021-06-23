@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #3700ff, #190149);
+    background-repeat: no-repeat;
+    min-width: 100vh;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main.container {
+    background: white;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px #313131;
+    max-width: 400px;
+    max-height: 100vh;
+    border-radius: 0.2cm;
+}
+
+main h2{
+    font-weight: 800;
+}
+
+.footer span {
+    color: #7e7e7e;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.input-field input {
+    outline: none;
+    font-size: 0.9rem;
+    color: black;
+}
+
+form .input-field {
+    margin-bottom: 1rem;
+}
+
+.input-field {
+    position: relative;
+}
+
+
+
+.input-field .underline::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+.input-field .underline::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: rgb(105, 64, 255);
+    transform: scaleX(0);
+    transition: all 0.3s ease-in;
+    transform-origin: left;
+}
+
+.input-field input:focus ~ .underline::after {
+    transform: scaleX(1);
+}
+
+form input[type="submit"] {
+    margin-top: 2rem;
+    padding: 0.4rem;
+    background: rgb(83, 83, 245);
+    border-radius: 0.1cm;
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.footer span {
+    color: #7e7e7e;
+    font-size: 0.7rem;
+}
+
+.footer .social-icons {
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+
+.footer .social-icons a i {
+    margin:0 0.4rem;
+    width: 15px;
+}
+
+.footer .social-icons a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .social-icons.google {
+    background: rgb(102, 102, 255);
+}
+.footer .social-icons.Facebook {
+    background: rgb(96, 96, 255);
+}
